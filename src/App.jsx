@@ -1,20 +1,34 @@
 import NavBar from './components/NavBar/NavBar'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
-import ContadorContainer from './components/ejemplos/ContadorContainer'
+import ContadorContainer from './components/ContadorContainer/ContadorContainer'
 import './App.css'
+import ItemCount from './components/ItemCount/ItemCount'
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
+
 
 function App() {
 
 
   return (
   <div className='background-page'>
-    <NavBar />
-    <ItemListContainer saludo={"Cursos Disponibles"} />
-    <ItemListContainer saludo={"Guias Disponibles"} />
-    <ItemListContainer saludo={"Asesorías Disponibles"} />
-    <ContadorContainer />
+    <BrowserRouter>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<ItemListContainer saludo={"Cursos / Guias / Asesorías Disponibles"} />} />
+        <Route path="/category/:idCategory" element={ <ItemListContainer/>} />
+        <Route path="/detail/:idProduct" element={<ItemDetailContainer/>} />
+        <Route path="*" element={<h1>404 NOT FOUND</h1>} />
+      </Routes>
+    </BrowserRouter>
   </div>
   )
 }
 
 export default App
+
+
+//    <ItemListContainer saludo={"Guias Disponibles"} />
+// <ItemListContainer saludo={"Asesorías Disponibles"} />
+//<ContadorContainer />
+// <ItemCount initial={1} stock={10} onAdd={(quantity) => console.log("Cantidad agregada", quantity)} />
