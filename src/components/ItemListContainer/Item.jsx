@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 import "./itemlistcontainer.css"
+import ItemCount from '../ItemCount/ItemCount'
 
 const Item = ({product}) => {
   return (
@@ -9,7 +10,8 @@ const Item = ({product}) => {
         <h2 className='text-itemone'>{product.name}</h2> 
         <p className='text-itemtwo'>Descripción: {product.description} </p>
         <p className='text-itemtwo'>precio: ${product.price} </p>
-        <Link to={"/detail/" + product.id} > Ver detalles </Link>
+        <Link to={"/detail/" + product.id} className="button-detail"> Ver detalles </Link>
+        <ItemCount initial={1} stock={10} onAdd={(quantity) => console.log("Cantidad agregada", quantity)} />
     </div>
   )
 }

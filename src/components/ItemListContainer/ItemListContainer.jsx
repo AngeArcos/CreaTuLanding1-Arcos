@@ -3,8 +3,9 @@ import { getProducts } from '../../data/data.js'
 import { useState, useEffect } from "react"
 import ItemList from './ItemList'
 import { useParams } from "react-router-dom"
+import "./itemlistcontainer.css"
 
-const ItemListContainer = ({saludo}) => {
+const ItemListContainer = () => {
 
     const temas = {color:"black", fontSize: "20px", fontFamily: "fantasy" }
 
@@ -29,8 +30,7 @@ const ItemListContainer = ({saludo}) => {
   }, [idCategory])
 
   return (
-    <div className='saludo1'>
-        <h1 style= {temas}>{saludo}</h1>
+    <div className='itemlistcontainer'>
         <ItemList products={products} />
     </div>
   )

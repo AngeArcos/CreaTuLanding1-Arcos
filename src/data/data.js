@@ -3,10 +3,10 @@ const products = [
     {
         id: "C1",
         name: "Curso autismo",
-        description: "para estudiantes",
+        description: "para estudianteslo",
         price: 50000,
         stock: 10,
-        image: "/img/dirigido-a-kine.jpg", 
+        image: "/img/c1.jpg", 
         category: "cursos"
     },
     {
@@ -15,7 +15,7 @@ const products = [
         description: "para profesionales",
         price: 40000,
         stock: 10,
-        image: "/img/nuestros-espacios-foto2.jpg", //Primero añado la barra, esto asume que estamos parados sobre la carpeta public. Vamos a añadir la etiqueta img a "items.jsx"
+        image: "/img/c2.webp", //Primero añado la barra, esto asume que estamos parados sobre la carpeta public. Vamos a añadir la etiqueta img a "items.jsx"
         category: "cursos"
     },
     {
@@ -24,7 +24,7 @@ const products = [
         description: "para estudiantes y profesionales",
         price: 30000,
         stock: 10,
-        image: "/img/nuestros-espacios-foto3.jpg", 
+        image: "/img/c3.webp", 
         category: "cursos"
     },
     {
@@ -33,7 +33,7 @@ const products = [
         description: "Para padres de niños con autismo",
         price: 10000,
         stock: 15,
-        image: "/img/dirigido-a-kine.jpg",
+        image: "/img/g1.webp",
         category: "Guias"
     },
     {
@@ -42,7 +42,7 @@ const products = [
         description: "Para profesores de niños con altas capacidades",
         price: 5000,
         stock: 15,
-        image: "/img/nuestros-espacios-foto2.jpg", 
+        image: "/img/g2.webp", 
         category: "Guias"
     },
     {
@@ -51,7 +51,7 @@ const products = [
         description: "Evaluación y análisis de casos",
         price: 20000,
         stock: 3,
-        image: "/img/dirigido-a-kine.jpg", 
+        image: "/img/a1.png", 
         category: "Asesorias"
     },
     {
@@ -60,7 +60,7 @@ const products = [
         description: "para profesionales",
         price: 80000,
         stock: 4,
-        image: "/img/nuestros-espacios-foto2.jpg", 
+        image: "/img/a2.jpeg", 
         category: "Asesorias"
     }
 ]

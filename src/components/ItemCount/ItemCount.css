@@ -1,0 +1,30 @@
+.controls{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+.Button{
+    width: 60%;
+    margin-right: 8%;
+    margin-left: 8%;
+    padding: 2px;
+    background-color: #FDCC5C;
+    border-radius: 5px;
+    border: 2px solid rgb(175, 175, 174);
+    text-align: center;
+}
+.Number{
+    text-align: center;
+}
+.Button-carro{
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 5%;
+    padding: 2px;
+    background-color: #FDCC5C;
+    border-radius: 5px;
+    border: 2px solid rgb(175, 175, 174);
+    text-align: center;
+
+}

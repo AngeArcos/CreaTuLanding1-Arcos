@@ -1,16 +1,14 @@
 import React from 'react'
 import Item from './Item'
 import ContadorContainer from '../ContadorContainer/ContadorContainer'
-import ItemCount from '../ItemCount/ItemCount'
 
 const ItemList = ({products}) => {
   return (
-    <div>
+    <div className="itemlist">
         {
             products.map( (product) => (
                 <div>
                     <Item product={product} key={product.id} />
-                    <ItemCount initial={1} stock={10} onAdd={(quantity) => console.log("Cantidad agregada", quantity)} />
                 </div>
             ))
         }
