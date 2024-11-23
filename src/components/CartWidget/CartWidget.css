@@ -1,0 +1,15 @@
+.Button-carro-compra{
+    display: flex;
+    width: 40%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 2px;
+    background-color: rgb(175, 175, 174);
+    border-radius: 5px;
+    border: 2px solid rgb(175, 175, 174);
+    text-align: center;
+}
+.Number-carro{
+    font-weight: bold;
+    margin-left: 30%;
+}

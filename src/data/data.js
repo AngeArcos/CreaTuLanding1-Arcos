@@ -3,7 +3,7 @@ const products = [
     {
         id: "C1",
         name: "Curso autismo",
-        description: "para estudianteslo",
+        description: "para estudiantes",
         price: 50000,
         stock: 10,
         image: "/img/c1.jpg", 

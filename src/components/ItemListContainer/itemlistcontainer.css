@@ -11,7 +11,7 @@
   }
   .itemlistcontainer .item{
     width: 250px;
-    height: 520px;
+    height: 100%;
     margin: 3% 6%;
     padding: 1%;
     border-radius: 5px;
@@ -23,6 +23,8 @@
   
   .item .item-img{
     width: 90%;
+    height: 150px;
+    object-fit: cover;
     padding: 2%;
     align-items: center;
     border-radius: 1%;

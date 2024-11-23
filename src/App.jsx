@@ -5,6 +5,8 @@ import './App.css'
 import ItemCount from './components/ItemCount/ItemCount'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
+import { CartProvider } from './context/CartContext'
+import Cart from './components/Cart/Cart'
 
 
 function App() {
@@ -13,13 +15,16 @@ function App() {
   return (
   <div className='background-page'>
     <BrowserRouter>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<ItemListContainer />} />
-        <Route path="/category/:idCategory" element={ <ItemListContainer/>} />
-        <Route path="/detail/:idProduct" element={<ItemDetailContainer/>} />
-        <Route path="*" element={<h1>404 NOT FOUND</h1>} />
-      </Routes>
+      <CartProvider>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<ItemListContainer />} />
+          <Route path="/category/:idCategory" element={ <ItemListContainer/>} />
+          <Route path="/detail/:idProduct" element={<ItemDetailContainer/>} />
+          <Route path="*" element={<h1>404 NOT FOUND</h1>} />
+          <Route path="/Cart" element={<Cart/>} />
+        </Routes>
+      </CartProvider>
     </BrowserRouter>
   </div>
   )

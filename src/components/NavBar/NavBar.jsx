@@ -11,12 +11,13 @@ const NavBar = () => {
 
   return (
     <nav className="navbar">
+    <Link to="/" >
+      <h3 className='navbar-title' >Menu</h3>
+      <h3 className='navbar-title' >Venta de cursos</h3>
+    </Link>
     <div>
         <CartWidget />
     </div>
-    <Link to="/" >
-      <h3 className='navbar-title' /*style= { styetittle }*/ >Venta de cursos</h3>
-    </Link>
     <div className='navbar-button'>
       <button className='style-button'>
         <Link to="/category/Guias">Guias</Link>
